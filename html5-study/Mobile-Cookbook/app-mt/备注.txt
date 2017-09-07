@@ -1,0 +1,49 @@
+移动端页面使用rem来做适配
+http://www.jianshu.com/p/eb05c775d3c6
+
+visibility  hidden	元素框不可见，但仍然影响布局。
+
+text-shadow 文本阴影
+
+white-space: nowrap 强制在同一行内显示所有文本，直到文本结束或者遭遇br对象
+
+text-overflow: ellipsis 当对象内文本溢出时显示省略标记（...）
+
+overflow hidden 内容会被修剪，并且其余内容是不可见的
+
+text-align: justify 实现两端对齐文本效果。
+
+css3  box-sizing: border-box 规定两个并排的带边框的框
+
+css3  border-radius 向 div 元素添加圆角边框
+
+vertical-align 垂直对齐
+
++ 相邻同胞选择器
+
+@keyframes 使 div 元素匀速向下移动
+
+<dl> 标签定义了定义列表（definition list）
+
+css3 appearance 使 div 元素看上去像一个按钮
+
+vertical-align text-bottom 把元素的底端与父元素字体的底端对齐
+
+user-select none 文本不能被选择
+
+webkit-box
+CSS3.0盒模型display:-webkit-box;的使用 http://wenlong883.blog.163.com/blog/static/1718109162011102281912385/
+自适应布局webkit-box的用法 http://www.websqq.org/archives/969
+
+word-break break-all 允许在单词内换行
+
+div span 区别 div是块元素 span是行内元素 ，所谓块元素，是以另起一行开始渲染的元素，行内元素则不需另起一行
+
+自定义图标 ？
+
+
+
+
+
+
+

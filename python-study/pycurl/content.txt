@@ -1,0 +1,418 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Fri, 11 Sep 2015 07:10:37 GMT
+Content-Type: text/html; charset=GBK
+Content-Length: 18835
+Connection: keep-alive
+Vary: Accept-Encoding
+Vary: Accept-Encoding
+ETag: "5iKrh2fdjRQ"
+Last-Modified: Thu, 30 Jul 2015 03:35:44 GMT
+Cache-Control: max-age=5
+Expires: Fri, 11 Sep 2015 07:00:47 GMT
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="gbk"/>
+<title>银行卡支付</title>
+<meta name="description" content="银行卡支付" />
+<meta name="keywords" content="银行卡支付" />
+<link rel="stylesheet" href="css/css.css"/>
+<!--[if IE 6]>
+	<script type="text/javascript" src="/ggpay/js/iepng.js" ></script>
+	<script type="text/javascript">
+	DD_belatedPNG.fix('.left_center li,.left_center li:hover,.left_center li a,.left_center ul li a:hover,.yhkzf,.headerbg_v1,.logo_v2 a,.nav_v2 a:hover,.nav_v2 .acur2v1,.left_center ul li a:hover,.yhk,.xyk,.yhhk,.sjcz,.yxdk,.gddh,.main_top,.main_bottom,.cfdhs,.wdzhs,.xfjls,.hztq,.hgtq');
+  </script>
+<![endif]-->
+</head>
+<body>
+<!--导航-->
+
+<p id="topBar"></p>
+<div class="headerbg_v1"></div>
+<div class="header_v1">
+  <div class="top_m960 clears">
+    <h1 class="logo_v2 fl"><a class="" href="http://www.guagua.cn/" hidefocus="true">&nbsp;</a>&nbsp;</h1>
+    <div class="nav_v2 fl clears" id="guaguaHeadBanner"> <a class="acur2v1" id="guaguaIndex" href="pay-bank.html" title="账户充值 " hidefocus="true">账户充值 </a> <a id="guaguaHallIndex" href="http://account.guagua.cn/ggmyaccount/ggmyaccount.html" title="我的账户" hidefocus="true" target="_blank">我的账户</a> <a id="guaguaActiveIndex" href="http://account.guagua.cn/ggmyaccount/ggmyaccount_help.html" title="充值帮助" hidefocus="true" target="_blank">充值帮助</a> </div>
+  </div>
+</div> 
+
+<!--导航End-->
+<div class="content">
+<div class="ts2" id="ts" >
+ <div><span><em>您当前使用的浏览器为</em>
+ <img src="images/gg.jpg" alt="" id="gg" style="display:none;">
+ <img src="images/huohu.jpg" alt="" id="hh" style="display:none;">
+ <img src="images/llq.jpg" alt="" id="ss" style="display:none;">
+ <em id="browserDesc"></em>
+ <img src="images/ie.jpg" alt=""><em>IE浏览器或IE内核浏览器继续进行呱呱币购买。</em></span><a href="javascript:void(0)" class="gb"></a></div>
+</div>
+  <!--main-Begin-->
+  <div id="main">
+  <form   id="ggform" method="post" action="/ggpay/thirdsend.jspa" target="_blank">
+  
+    <input type="hidden" id="orderVopayType" name="orderVo.payType" value=""/>
+    <input type="hidden" id="orderVopayMoney" name="orderVo.guaguaMoney" value=""/>
+    <input type="hidden" id="b2mRadio" value=""/>
+    <input type="hidden" id="minpayvalue" value=""/>
+    <input type="hidden" id="maxpayvalue" value=""/>
+    
+    <input type="hidden" id="pd_FrpId" name="orderVo.pd_FrpId" value=""/>
+    <input type="hidden" id="rmbAmount" name="orderVo.rmbAmount" value=""/>
+    
+    <input type="hidden" id="yeepayType" value=""/>
+    <input type="hidden" id="tenpayType" value=""/>
+    <input type="hidden" id="aliType" value=""/>
+    <input type="hidden" id="yeekuaipayType" value=""/>
+    <input type="hidden" id="unionpayType" value=""/>
+    <input type="hidden" id="llpayType" value=""/>
+    <input type="hidden" id="llpayBankType" name="orderVo.llpayBankType" value="2"/>
+    <input type="hidden" id="llpayBankCode" name="orderVo.llpayBankCode" value=""/>
+	    
+    <div class="clear"></div>
+    <div class="clears"
+    <!--main_left-Begin-->
+    <div id="main_left">
+    <div class="left_top"></div>
+    <div class="left_center">
+      <ul>
+        <li><a href="pay-bank.html" class="yhkzfgl">银行卡支付</a></li>
+        <li><a href="pay-credit.html" class="xykzf">信用卡支付</a></li>
+        <!--<li><a href="pay-remit.html" class="yhhkzf">银行汇款支付</a></li>-->
+        <li><a href="pay-mobile.html" class="sjczkzf">手机充值卡支付</a></li>
+        <li><a href="pay-game.html" class="yxdkzf">游戏点卡支付</a></li>
+        <li><a href="pay-tel.html" class="gddhzf">固定电话支付</a></li> 
+      </ul>
+    </div>
+    <div class="left_bottom"></div>
+   </div>
+      
+    <!--main_left-End-->
+    <!--main_right-Begin-->
+    <div id="main_right">
+      <div class="right_top"></div>
+      <div class="right_center">
+        <div class="zffs"></div>
+        <div class="czid">
+          
+		 <table id="pay_user_info">
+		     <tr>
+		       <td class="td1">充值ID：</td>
+		       <td><span id="payId">
+		        <input type="text" id="uid" name="orderVo.uid" value="请输入您想充值的ID号" maxlength="15">
+		         </span></td>
+		     </tr>
+		     <tr>
+		       <td class="td1" >呱呱昵称：</td>
+		       <td id="username"></td>
+		     </tr>
+		</table>
+		 <a href="http://order.guagua.cn/kthvip.jsp" class="gmhz" target="_blank">购买红钻</a> </div>
+
+
+        <div class="cz_money">充值金额：<em>人民币和呱呱币比例为1： 600</em></div>
+        <div class="czje_cn">
+          <ul>
+            <li>
+              <input type="radio" id="50" name="bank"/>
+              <label  id="50_label" for="50" class="bank">
+              <em><a>￥</a>50</em>
+              <p>价值<span>3</span>万呱呱币</p>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="100" name="bank"/>
+              <label  id="100_label" for="100" class="bank">
+              <em><a>￥</a>100</em>
+              <p>价值<span>6</span>万呱呱币</p>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="200" name="bank"/>
+              <label  id="200_label" for="200" class="bank">
+              <em><a>￥</a>200</em>
+              <p>价值<span>12</span>万呱呱币</p>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="300" name="bank"/>
+              <label  id="300_label" for="300" class="bank">
+              <em><a>￥</a>300</em>
+              <p>价值<span>18</span>万呱呱币</p>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="500" name="bank"/>
+              <label  id="500_label" for="500" class="bank">
+              <em><a>￥</a>500</em>
+              <p>价值<span>30</span>万呱呱币</p>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="1000" name="bank"/>
+              <label  id="1000_label" for="1000" class="bank">
+              <em><a>￥</a>1000</em>
+              <p>价值<span>60</span>万呱呱币</p>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="2000" name="bank"/>
+              <label  id="2000_label" for="2000" class="bank">
+              <em><a>￥</a>2000</em>
+              <p>价值<span>120</span>万呱呱币</p>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="3000" name="bank"/>
+              <label  id="3000_label" for="3000" class="bank">
+              <em><a>￥</a>3000</em>
+              <p>价值<span>180</span>万呱呱币</p>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="5000" name="bank"/>
+              <label  id="5000_label" for="5000" class="bank">
+              <em><a>￥</a>5000</em>
+              <p>价值<span>300</span>万呱呱币</p>
+              </label>
+            </li>
+            <li>
+              <input type="radio" id="10000" name="bank"/>
+              <label  id="10000_label" for="10000" class="bank">
+              <em><a>￥</a>10000</em>
+              <p>价值<span>600</span>万呱呱币</p>
+              </label>
+            </li>
+            <li id="more_money">
+              <input type="radio" id="0" name="bank"/>
+              <label  id="qt_label" for="0" class="bank back2">
+              <span>其它金额：</span>
+              <div>
+                <input type="text" value="1到30000之间" id="otherAmountInput" maxlength="5">
+                元
+                <dl>
+                  在这里充值其他金额
+                </dl>
+              </div>
+              </label>
+            </li>
+          </ul>
+        </div>
+        <!--支付方式-Begin-->
+        <div class="qiehuan"> <span>支付方式：</span>
+	      <div class="tipsllpay">
+	              <img src="images/tipsllpay.png" width="107" height="30">
+	      </div>       
+          <div class="xixi2">          	
+            <div class="ybtab">易宝支付</div>
+            <div class="cfttab">财付通</div>
+			<div class="zfbtab">支付宝</div>
+			<!-- <div class="ybktab">易宝快捷支付</div> -->
+			<div class="yltab">银联快捷</div>
+			<div class="lltab">快捷支付</div>
+          </div>
+        </div>
+        <div class="box">       
+          <div id="yb" class="xxkcon">
+            <ul id="bank_box">
+              <li>
+                <input type="radio" id="nongye" name="bank3" value="ABC-NET"/>
+                <label  id="nongye_label" for="nongye" class="bank3 nongye"> </label>
+              </li>
+              <li>
+                <input type="radio" id="gongshang" name="bank3" value="ICBC-NET"/>
+                <label  id="gongshang_label" for="gongshang" class="bank3 gongshang"> </label>
+              </li>
+              <li>
+                <input type="radio" id="jianshe" name="bank3" value="CCB-NET"/>
+                <label  id="jianshe_label" for="jianshe" class="bank3 jianshe"> </label>
+              </li>
+              <li>
+                <input type="radio" id="youzheng" name="bank3" value="POST-NET"/>
+                <label  id="youzheng_label" for="youzheng" class="bank3 youzheng"> </label>
+              </li>
+              <li>
+                <input type="radio" id="zhongguo" name="bank3" value="BOC-NET"/>
+                <label  id="zhongguo_label" for="zhongguo" class="bank3 zhongguo"> </label>
+              </li>
+              <li>
+                <input type="radio" id="zhaoshang" name="bank3" value="CMBCHINA-NET"/>
+                <label  id="zhaoshang_label" for="zhaoshang" class="bank3 zhaoshang"> </label>
+              </li>
+              <li>
+                <input type="radio" id="jiaotong" name="bank3" value="BOCO-NET-B2C"/>
+                <label  id="jiaotong_label" for="jiaotong" class="bank3 jiaotong"> </label>
+              </li>
+              <li>
+                <input type="radio" id="guangda" name="bank3" value="CEB-NET"/>
+                <label  id="guangda_label" for="guangda" class="bank3 guangda"> </label>
+              </li>
+              <li>
+                <input type="radio" id="zhongxin" name="bank3" value="ECITIC-NET"/>
+                <label  id="zhongxin_label" for="zhongxin" class="bank3 zhongxin"> </label>
+              </li>
+              <li>
+                <input type="radio" id="minsheng" name="bank3" value="CMBC-NET"/>
+                <label  id="minsheng_label" for="minsheng" class="bank3 minsheng"> </label>
+              </li>
+              <li>
+                <input type="radio" id="pufa" name="bank3" value="SPDB-NET"/>
+                <label  id="pufa_label" for="pufa" class="bank3 pufa"> </label>
+              </li>
+              <li>
+                <input type="radio" id="beijing" name="bank3" value="BCCB-NET"/>
+                <label  id="beijing_label" for="beijing" class="bank3 beijing"> </label>
+              </li>
+              <li>
+                <input type="radio" id="xingye" name="bank3" value="CIB-NET"/>
+                <label  id="xingye_label" for="xingye" class="bank3 xingye"> </label>
+              </li>
+              <li>
+                <input type="radio" id="shenzhen" name="bank3" value="SDB-NET"/>
+                <label  id="shenzhen_label" for="shenzhen" class="bank3 shenzhen"> </label>
+              </li>
+              <li> <span class="zhu">注：深圳发展银行与平安银行已<br>
+                合并，选择深圳发展银行将跳转<br>
+                到平安银行支付。</span> </li>
+            </ul>
+            <a class="gdyh" id="qita">更多银行</a><a class="gdyh sq" id="shouqi">收起</a> </div>
+          <div id="cft" class="xxkcon">
+            <ul>
+              <li>
+                <input type="radio" id="caifutong" name="bank3"/>
+                <label  id="caifutong_label" for="caifutong" class="bank3 caifutong"> </label>
+              </li>
+            </ul>
+          </div>
+		   <div id="zfb" class="xxkcon">
+            <ul>
+              <li>
+                <input type="radio" id="zhifubao" name="bank3"/>
+                <label  id="zhifubao_label" for="zhifubao" class="bank3 zhifubao"> </label>
+              </li>
+            </ul>
+          </div>
+		   <div id="yl" class="xxkcon">
+            <ul>
+              <li>                
+                <input type="radio" id="unionpay" name="bank3" value="UNIONPAY"/>
+                <label  id="unionpay_label" for="unionpay" class="bank3 ylkjzf"> </label>
+              </li>
+              <li><a href="/ggpay/unionpay-bank-help.html" class="czys" target="_blank"><img src="images/btn_ys.gif" width="88" height="24"></a></li>
+            </ul>
+            <p class="orange">您仅需要一张银行卡或者信用卡（没有开通网银也没关系）输入卡号，即享安全、便捷的支付体验！（每笔限额500元，每日限额2000元）</p>    
+            <div class="wxts">
+              <h2>温馨提示</h2>
+              <ul>
+                <li>1、建议使用工行银行（信用卡、储蓄卡）、农业银行（储蓄卡）。</li>
+                <li>2、因各家银行的限制不同，个别银行卡需要到营业厅开通网银或是无卡支付业务。</li>
+              </ul>
+            </div>
+          </div>  
+          <div id="ll" class="xxkcon">
+           <ul id="ll_bank_box">
+              <li>
+                <input type="radio" id="ll_nongye" name="bank3" value="01030000"/>
+                <label  id="nongye_label" for="ll_nongye" class="bank3 nongye"> </label>
+              </li>
+              <li>
+                <input type="radio" id="ll_gongshang" name="bank3" value="01020000"/>
+                <label  id="gongshang_label" for="ll_gongshang" class="bank3 gongshang"> </label>
+              </li>
+              <li>
+                <input type="radio" id="ll_zhongguo" name="bank3" value="01040000"/>
+                <label  id="zhongguo_label" for="ll_zhongguo" class="bank3 zhongguo"> </label>
+              </li>
+              <li>
+                <input type="radio" id="ll_xingye" name="bank3" value="03090000"/>
+                <label  id="xingye_label" for="ll_xingye" class="bank3 xingye"> </label>
+              </li>  
+              <li>
+                <input type="radio" id="ll_huaxia" name="bank3" value="03040000"/>
+                <label  id="huaxia_label" for="ll_huaxia" class="bank3 huaxia"> </label>
+              </li>              
+              <li>
+                <input type="radio" id="ll_zhongxin" name="bank3" value="03020000"/>
+                <label  id="zhongxin_label" for="ll_zhongxin" class="bank3 zhongxin"> </label>
+              </li>              
+              <li>
+                <input type="radio" id="ll_pingan" name="bank3" value="03070000"/>
+                <label  id="pingan_label" for="ll_pingan" class="bank3 pingan"> </label>
+              </li>              
+              <li>
+                <input type="radio" id="ll_pufa" name="bank3" value="03100000"/>
+                <label  id="pufa_label" for="ll_pufa" class="bank3 pufa"> </label>
+              </li>
+              <li>
+                <input type="radio" id="ll_jianshe" name="bank3" value="01050000"/>
+                <label  id="jianshe_label" for="ll_jianshe" class="bank3 jianshe"> </label>
+              </li>                   
+              <li>
+                <input type="radio" id="ll_guangda" name="bank3" value="03030000"/>
+                <label  id="guangda_label" for="ll_guangda" class="bank3 guangda"> </label>
+              </li>
+              <li>
+                <input type="radio" id="ll_hangzhou" name="bank3" value="04233310"/>
+                <label  id="hangzhou_label" for="ll_hangzhou" class="bank3 hangzhou"> </label>
+              </li>     
+ 			  <li>
+                <input type="radio" id="ll_jiangsu" name="bank3" value="05083000"/>
+                <label  id="jiangsu_label" for="ll_jiangsu" class="bank3 jiangsu"> </label>
+              </li>  
+ 			  <li>
+                <input type="radio" id="ll_shanghai" name="bank3" value="04012900"/>
+                <label  id="shanghai_label" for="ll_shanghai" class="bank3 shanghai"> </label>
+              </li>  
+              <li>
+                <input type="radio" id="ll_nanjing" name="bank3" value="04243010"/>
+                <label  id="nanjing_label" for="ll_nanjing" class="bank3 nanjing"> </label>
+              </li>                                                                                                    
+            </ul>
+          	<a class="gdyh" id="ll_qita">更多银行</a><a class="gdyh sq" id="ll_shouqi">收起</a> 
+          </div>
+        </div>
+        <div class="tijiaos">
+          <p>共计：<em id="rmbAmountTemp">0</em>元，价值<span>0</span>万呱呱币</p>
+          <a id="zhifu"  class="tj_btn" ></a>
+          <div>
+            <input id="protocol" type="checkbox" value="" checked="checked">
+            <a id="protocol_url" href="/newpay/include/treaty_message.jsp" target="_blank">我已认真阅读《呱呱充值服务协议》</a></div>
+        </div>
+        <!--支付方式-End-->
+      </div>
+      <div class="right_bottom"></div>
+    </div>
+    <!--main_right-End-->
+    </div>
+    </div>
+    </form>
+  </div>
+  <!--main-End-->
+<!--footer-Begin-->
+  <p id="footerBar"></p>
+<!--footer-End-->
+<!--弹出框-Begin-->
+<div class="tck">
+  <h3>登录网上银行充值<a href="javascript:void(0)" class="close"></a></h3>
+  <p>请您在新打开的网上银行进行支付，支付完成前请不要关闭该窗口</p>
+  <div class="czcgs"><span>充值成功</span><a id="continuePay" href="/ggpay/pay-bank.html">继续充值</a><a id="payDone" href="/ggpay/isPaySuccess.jspa">已完成支付</a></div>
+  <div class="czcgs"><span class="sb">充值失败</span><a href="/ggpay/pay-bank.html">选择其他充值方式</a><a href="http://account.guagua.cn/ggmyaccount/ggmyaccount_help.html" target="_blank">查看充值帮助</a></div>
+  <div class="czcgs newadd">
+  <em></em>
+  <ul>
+  	<li><a href="http://chat.guagua.cn/enterroom.jsp?oemid=0&id=205811" target="_blank">进入客服房间（205811）</a><a rel="nofollow" href="tencent://message/?uin=597591989&amp;Site=www.guagua.cn&amp;Menu=yes" class="feedback" title="QQ客服" target="_blank">客服QQ：597591989</a></li>
+  </ul>
+  </div>    
+</div>
+<!--弹出框-End-->
+<div class="layer"></div>
+</body>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="js/chongzhi.js"></script>
+<script type="text/javascript" src="js/ggpay.js"></script>
+<script type="text/javascript" src="js/ggpay-bank.js"></script>
+<script type="text/javascript" src="http://www.guagua.cn/guagua/templet/js/login.js" charset="GBK"></script>
+<script type="text/javascript" src="http://www.guagua.cn/guagua/templet/js/guaguaLRJS.js"></script>
+</html>
+
